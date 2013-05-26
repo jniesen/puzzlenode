@@ -24,14 +24,6 @@ class TestRateFinder < MiniTest::Unit::TestCase
     assert_equal missing_rate_for_a, @rate_finder.identify_missing_rate_for("A")
   end
 
-  def test_a_strategy_for_calculating_the_missing_convesion_rate_can_be_found
-    strategy = {
-      step1: {from: "A", to: "C", conversion: "0.05"},
-      step2: {from: "C", to: "D", conversion: "0.9"}
-    }
-    assert_equal strategy, @rate_finder.find_conversion_strategy("A", "D")
-  end
-
   def test_a_currences_missing_conversion_rate_can_be_calculated
     missing_conversion_rate = "0.045"
     assert_equal missing_conversion_rate, @rate_finder.calculate_missing_rate_for("A", "D")

@@ -13,9 +13,9 @@ class RateFinder
   end
 
   def find_rates_for(currency)
-    @rates.inject({}) do |h, rate|
-      h[rate[:to].to_sym] = rate[:conversion] if rate[:from] == currency
-      h
+    @rates.inject({}) do |needed_rates, rate|
+      needed_rates[rate[:to].to_sym] = rate[:conversion] if rate[:from] == currency
+      needed_rates
     end
   end
 
@@ -32,6 +32,16 @@ class RateFinder
     step1_result = control * strategy[:step1][:conversion].to_bdec
     step2_result = step1_result * strategy[:step2][:conversion].to_bdec
     (step2_result / control).to_s('F')
+  end
+
+  private
+  def available_currencies
+    currency_array = []
+    @rates.each do |rate|
+      currency_array << rate[:from].to_sym
+      currency_array << rate[:to].to_sym
+    end
+    currency_array.uniq!
   end
 
   def find_conversion_strategy(from_currency, to_currency)
@@ -55,16 +65,6 @@ class RateFinder
     end
 
     {step1: step1, step2: step2.first}
-  end
-
-  private
-  def available_currencies
-    currency_array = []
-    @rates.each do |rate|
-      currency_array << rate[:from].to_sym
-      currency_array << rate[:to].to_sym
-    end
-    currency_array.uniq!
   end
 end
 
