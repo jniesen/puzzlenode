@@ -12,46 +12,30 @@ class RateFinder
     @rates = rates
   end
 
-  def find_rates_for(currency)
-    @rates.inject({}) do |needed_rates, rate|
-      needed_rates[rate[:to].to_sym] = rate[:conversion] if rate[:from] == currency
-      needed_rates
+  def get_conversion_rate_for(from, to)
+    matches = @rates.select do |rate|
+      rate.values_at(:from, :to) == [from, to]
     end
+
+    rate = matches.first && matches.first[:conversion]
+    rate ||= calculate_missing_rate_for(from, to)
   end
 
-  def identify_missing_rate_for(currency)
-    available_rates = find_rates_for currency
-    available_currencies.select do |blah|
-      blah != currency.to_sym && !available_rates.has_key?(blah)
-    end
-  end
-
-  def calculate_missing_rate_for(from_currency, to_currency)
+  def calculate_missing_rate_for(from, to)
     control = '5'.to_bdec
-    strategy = find_conversion_strategy(from_currency, to_currency)
+    strategy = find_conversion_strategy(from, to)
+
     step1_result = control * strategy[:step1][:conversion].to_bdec
     step2_result = step1_result * strategy[:step2][:conversion].to_bdec
-    (step2_result / control).to_s('F')
+    conversion_rate = (step2_result / control).to_s('F')
+    @rates << {from: from, to: to, conversion: conversion_rate }
+    conversion_rate
   end
 
   private
-  def available_currencies
-    currency_array = []
-    @rates.each do |rate|
-      currency_array << rate[:from].to_sym
-      currency_array << rate[:to].to_sym
-    end
-    currency_array.uniq!
-  end
-
-  def find_conversion_strategy(from_currency, to_currency)
-    step1_candidates = @rates.select do |rate|
-      rate[:from] == from_currency
-    end
-
-    step2_candidates = @rates.select do |rate|
-      rate[:to] == to_currency
-    end
+  def find_conversion_strategy(from, to)
+    step1_candidates = @rates.select { |rate| rate[:from] == from }
+    step2_candidates = @rates.select { |rate| rate[:to] == to }
 
     step1 = {}
     step2_candidates.each do |step2_candidate|
@@ -60,9 +44,7 @@ class RateFinder
       end
     end
 
-    step2 = step2_candidates.select do |step2_candidate|
-      step1[:to] == step2_candidate[:from]
-    end
+    step2 = step2_candidates.select { |candidate| step1[:to] == candidate[:from] }
 
     {step1: step1, step2: step2.first}
   end
