@@ -1,0 +1,14 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ZenTest (4.9.2)
+    nokogiri (1.5.9)
+    nori (2.2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ZenTest
+  nokogiri
+  nori

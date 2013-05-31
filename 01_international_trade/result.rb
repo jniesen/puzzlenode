@@ -7,6 +7,15 @@ class String
   end
 end
 
+class Float
+  require 'bigdecimal'
+  BigDecimal.mode(BigDecimal::ROUND_MODE, BigDecimal::ROUND_HALF_EVEN)
+
+  def to_bdec
+    BigDecimal.new(self.to_s)
+  end
+end
+
 class RateFinder
   def initialize(rates)
     @rates = rates
@@ -49,4 +58,55 @@ class RateFinder
     {step1: step1, step2: step2.first}
   end
 end
+
+class InternationalTotaler
+  def initialize(totals)
+    @totals = totals
+  end
+
+  def totals_for_sku(sku)
+    location_totals = @totals.select { |total| total[:sku] == sku }
+    location_totals.map() do |total|
+      {total: total[:total], currency: total[:currency]}
+    end
+  end
+
+  def get_totals(rates, desired_currency, transactions)
+    transactions.map do |transaction|
+      if transaction[:currency] != desired_currency
+        conversion_rate = rates.get_conversion_rate_for(transaction[:currency], desired_currency).to_bdec
+        new_total = transaction[:total].to_bdec * conversion_rate
+        transaction[:total] = new_total.to_s('F')
+        transaction[:currency] = desired_currency
+      end
+    end
+    transactions.inject(0) do |total, transaction|
+      total.to_s.to_bdec + transaction[:total].to_bdec
+    end.to_s('F')
+  end
+end
+
+
+class Runner
+  require 'csv'
+  require 'bundler/setup'
+  require 'nori'
+
+  RATES_FILE = File.open('files/RATES.xml').read
+  TRANS_FILE = 'files/SAMPLE_TRANS.csv'
+
+  def self.run
+    symbols = lambda { |tag| tag.to_sym }
+    parsed_xml = Nori.new(convert_tags_to: symbols).parse(RATES_FILE)
+
+    rates = parsed_xml[:rates][:rate]
+    rate_finder = RateFinder.new(rates)
+
+    transactions = CSV.read(TRANS_FILE)
+    columns = transactions.delete_at(0)
+    transactions = transactions.map { |a| Hash[ columns.zip(a) ] }
+  end
+end
+
+Runner.run
 

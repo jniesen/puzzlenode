@@ -1,0 +1,7 @@
+require 'bundler/setup'
+require 'autotest/restart'
+
+Autotest.add_hook :initialize do |at|
+  at.add_mapping(/result.*rb/) { |f, _| at.files_matching(/^result_test.rb$/) }
+end
+

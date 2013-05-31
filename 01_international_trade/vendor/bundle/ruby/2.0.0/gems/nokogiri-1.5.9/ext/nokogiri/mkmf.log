@@ -1,0 +1,475 @@
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxslt -lz -lpthread -licucore -lm -lxml2     -lruby-static  -lpthread -ldl -lobjc  "
+ld: warning: directory '/usr/local/Cellar/libxml2/2.9.1/lib' following -L not found
+ld: warning: directory '/opt/local/lib' following -L not found
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(void) {return 0;}
+/* end */
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxslt -lz -lpthread -licucore -lm -lxml2     -lruby-static  -lpthread -ldl -lobjc  "
+ld: warning: directory '/usr/local/Cellar/libxml2/2.9.1/lib' following -L not found
+ld: warning: directory '/opt/local/lib' following -L not found
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+package configuration for libxslt
+cflags: -I/usr/include/libxml2
+ldflags: 
+libs: -lxslt -lz -lpthread -licucore -lm -lxml2
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lxslt -lz -lpthread -licucore -lm -lxml2 -lruby-static  -lpthread -ldl -lobjc  "
+ld: warning: directory '/usr/local/Cellar/libxml2/2.9.1/lib' following -L not found
+ld: warning: directory '/opt/local/lib' following -L not found
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+package configuration for libxml-2.0
+cflags: -I/usr/include/libxml2
+ldflags: 
+libs: -lxml2
+
+package configuration for libiconv is not found
+find_header: checking for libxml/parser.h... -------------------- yes
+
+"gcc-4.2 -E -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libxml/parser.h>
+/* end */
+
+--------------------
+
+find_header: checking for libxslt/xslt.h... -------------------- yes
+
+"gcc-4.2 -E -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libxslt/xslt.h>
+/* end */
+
+--------------------
+
+find_header: checking for libexslt/exslt.h... -------------------- yes
+
+"gcc-4.2 -E -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libexslt/exslt.h>
+/* end */
+
+--------------------
+
+have_func: checking for iconv_open() in iconv.h... -------------------- no
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2      -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+ld: warning: directory '/usr/local/Cellar/libxml2/2.9.1/lib' following -L not found
+ld: warning: directory '/opt/local/lib' following -L not found
+Undefined symbols:
+  "_iconv_open", referenced from:
+      _t in cchGEq4K.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <iconv.h>
+4: 
+5: /*top*/
+6: int main(void) {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))iconv_open; return 0; }
+/* end */
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2      -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:8: error: too few arguments to function ‘iconv_open’
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <iconv.h>
+4: 
+5: /*top*/
+6: int main(void) {return 0;}
+7: extern int t(void);
+8: int t(void) { iconv_open(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for iconv_open() in -liconv... -------------------- yes
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2      -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+ld: warning: directory '/usr/local/Cellar/libxml2/2.9.1/lib' following -L not found
+ld: warning: directory '/opt/local/lib' following -L not found
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <iconv.h>
+4: 
+5: /*top*/
+6: int main(void) {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))iconv_open; return 0; }
+/* end */
+
+--------------------
+
+find_library: checking for xmlParseDoc()... -------------------- -lxml2
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: error: ‘xmlParseDoc’ undeclared (first use in this function)
+conftest.c:6: error: (Each undeclared identifier is reported only once
+conftest.c:6: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlParseDoc; return 0; }
+/* end */
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: warning: implicit declaration of function ‘xmlParseDoc’
+ld: warning: directory '/usr/local/Cellar/libxml2/2.9.1/lib' following -L not found
+ld: warning: directory '/opt/local/lib' following -L not found
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { xmlParseDoc(); return 0; }
+/* end */
+
+--------------------
+
+find_library: checking for xsltParseStylesheetDoc()... -------------------- -lxslt
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: error: ‘xsltParseStylesheetDoc’ undeclared (first use in this function)
+conftest.c:6: error: (Each undeclared identifier is reported only once
+conftest.c:6: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { void ((*volatile p)()); p = (void ((*)()))xsltParseStylesheetDoc; return 0; }
+/* end */
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: warning: implicit declaration of function ‘xsltParseStylesheetDoc’
+ld: warning: directory '/usr/local/Cellar/libxml2/2.9.1/lib' following -L not found
+ld: warning: directory '/opt/local/lib' following -L not found
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { xsltParseStylesheetDoc(); return 0; }
+/* end */
+
+--------------------
+
+find_library: checking for exsltFuncRegister()... -------------------- -lexslt
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: error: ‘exsltFuncRegister’ undeclared (first use in this function)
+conftest.c:6: error: (Each undeclared identifier is reported only once
+conftest.c:6: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { void ((*volatile p)()); p = (void ((*)()))exsltFuncRegister; return 0; }
+/* end */
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: warning: implicit declaration of function ‘exsltFuncRegister’
+ld: warning: directory '/usr/local/Cellar/libxml2/2.9.1/lib' following -L not found
+ld: warning: directory '/opt/local/lib' following -L not found
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { exsltFuncRegister(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlHasFeature()... -------------------- yes
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: error: ‘xmlHasFeature’ undeclared (first use in this function)
+conftest.c:6: error: (Each undeclared identifier is reported only once
+conftest.c:6: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlHasFeature; return 0; }
+/* end */
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: warning: implicit declaration of function ‘xmlHasFeature’
+ld: warning: directory '/usr/local/Cellar/libxml2/2.9.1/lib' following -L not found
+ld: warning: directory '/opt/local/lib' following -L not found
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { xmlHasFeature(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlFirstElementChild()... -------------------- yes
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: error: ‘xmlFirstElementChild’ undeclared (first use in this function)
+conftest.c:6: error: (Each undeclared identifier is reported only once
+conftest.c:6: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlFirstElementChild; return 0; }
+/* end */
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: warning: implicit declaration of function ‘xmlFirstElementChild’
+ld: warning: directory '/usr/local/Cellar/libxml2/2.9.1/lib' following -L not found
+ld: warning: directory '/opt/local/lib' following -L not found
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { xmlFirstElementChild(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetParserStructuredErrors()... -------------------- yes
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: error: ‘xmlRelaxNGSetParserStructuredErrors’ undeclared (first use in this function)
+conftest.c:6: error: (Each undeclared identifier is reported only once
+conftest.c:6: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return 0; }
+/* end */
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: warning: implicit declaration of function ‘xmlRelaxNGSetParserStructuredErrors’
+ld: warning: directory '/usr/local/Cellar/libxml2/2.9.1/lib' following -L not found
+ld: warning: directory '/opt/local/lib' following -L not found
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { xmlRelaxNGSetParserStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetParserStructuredErrors()... -------------------- yes
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: error: ‘xmlRelaxNGSetParserStructuredErrors’ undeclared (first use in this function)
+conftest.c:6: error: (Each undeclared identifier is reported only once
+conftest.c:6: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return 0; }
+/* end */
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: warning: implicit declaration of function ‘xmlRelaxNGSetParserStructuredErrors’
+ld: warning: directory '/usr/local/Cellar/libxml2/2.9.1/lib' following -L not found
+ld: warning: directory '/opt/local/lib' following -L not found
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { xmlRelaxNGSetParserStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetValidStructuredErrors()... -------------------- yes
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: error: ‘xmlRelaxNGSetValidStructuredErrors’ undeclared (first use in this function)
+conftest.c:6: error: (Each undeclared identifier is reported only once
+conftest.c:6: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetValidStructuredErrors; return 0; }
+/* end */
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: warning: implicit declaration of function ‘xmlRelaxNGSetValidStructuredErrors’
+ld: warning: directory '/usr/local/Cellar/libxml2/2.9.1/lib' following -L not found
+ld: warning: directory '/opt/local/lib' following -L not found
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { xmlRelaxNGSetValidStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlSchemaSetValidStructuredErrors()... -------------------- yes
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: error: ‘xmlSchemaSetValidStructuredErrors’ undeclared (first use in this function)
+conftest.c:6: error: (Each undeclared identifier is reported only once
+conftest.c:6: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetValidStructuredErrors; return 0; }
+/* end */
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: warning: implicit declaration of function ‘xmlSchemaSetValidStructuredErrors’
+ld: warning: directory '/usr/local/Cellar/libxml2/2.9.1/lib' following -L not found
+ld: warning: directory '/opt/local/lib' following -L not found
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { xmlSchemaSetValidStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlSchemaSetParserStructuredErrors()... -------------------- yes
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: error: ‘xmlSchemaSetParserStructuredErrors’ undeclared (first use in this function)
+conftest.c:6: error: (Each undeclared identifier is reported only once
+conftest.c:6: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetParserStructuredErrors; return 0; }
+/* end */
+
+"gcc-4.2 -o conftest -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/x86_64-darwin10.8.0 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0/ruby/backward -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/ruby-2.0.0 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/jniesen/.rbenv/versions/2.0.0-p0/include/libxml2 -I/opt/local/include -I/usr/local/include -I/usr/include -I/usr/include/libxml2 -I'/Users/jniesen/.rbenv/versions/2.0.0-p0/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -Wno-error=shorten-64-to-32 -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 conftest.c  -L. -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/jniesen/.rbenv/versions/2.0.0-p0/lib -L/usr/lib -lxml2     -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lruby-static -lexslt -lxslt -lxml2 -liconv  -lxslt -lz -lpthread -licucore -lm -lxml2 -lxml2 -lpthread -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:6: warning: implicit declaration of function ‘xmlSchemaSetParserStructuredErrors’
+ld: warning: directory '/usr/local/Cellar/libxml2/2.9.1/lib' following -L not found
+ld: warning: directory '/opt/local/lib' following -L not found
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main(void) {return 0;}
+5: extern int t(void);
+6: int t(void) { xmlSchemaSetParserStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
